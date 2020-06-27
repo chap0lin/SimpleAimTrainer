@@ -79,13 +79,13 @@ export default class Game extends Component{
     }
     loadAssets(){
         var background = new Image(3840,2466)
-        background.src = "../assets/background3.jpg"
+        background.src = "assets/background3.jpg"
         var aim = new Image(64,64)
-        aim.src = "../assets/aim.png"
+        aim.src = "assets/aim.png"
         var target = new Image(32,32)
-        target.src = "../assets/target.png"
-        var shotSound = new Audio('../assets/shot.mp3')
-        var shotSound2 = new Audio('../assets/shot.mp3')
+        target.src = "assets/target.png"
+        var shotSound = new Audio('assets/shot.mp3')
+        var shotSound2 = new Audio('assets/shot.mp3')
         this.setState({backgroundImage: background, aim, target, shotSound, shotSound2})
     }
     update(){
